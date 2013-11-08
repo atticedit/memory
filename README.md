@@ -17,8 +17,11 @@ gameTime --- Number
 don't need id because it's generated for us.
 
 Thought we wanted these:
-createdAt	Date
-completedAt	Date
+
+createdAt --- Date
+
+completedAt --- Date
+
 until we realized we could just use a timer
 
 --------------------------------------------------------------------------------
