@@ -1,12 +1,18 @@
 	 	 	
 Model:
 
-Game
+-------Game---------
 
-player              String
-numCards	Number
-cards               [Number]
-gameTime	Number
+player --- String
+
+numCards --- Number
+
+card --- [Number]
+
+gameTime --- Number
+
+--------------------
+
 
 don't need id because it's generated for us.
 
@@ -33,6 +39,9 @@ browser:
 - all card children removed from parent div (meaningful once it’s run more than once between refreshes)
 - clock starts counting up in seconds
 - cards appear
+
+
+--------------------------------------------------------------------------------
 
 player clicks a card
 
@@ -61,6 +70,8 @@ if a match:
 - adds class of correct to both cards (so pseudoclass of :not on click event can prevent any action on click), which:
 - keeps both card faces visible, possibly with different color background
 - remove class of guess
+
+--------------------------------------------------------------------------------
 
 if all cards but 2 (because we're not making the player click the last 2 that inevitably match) have been matched; triggered when length of elements with a class of correct is equal to numCards - 2):
 
